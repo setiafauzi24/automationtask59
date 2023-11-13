@@ -1,0 +1,16 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+test1,,,,2023-11-07 21:28:15,2023-11-07 21:28:21,5.517s,PASSED
+,,,,,,,
+Test Cases/testkesekiankali,,,,2023-11-07 21:28:16,2023-11-07 21:28:21,5.088s,PASSED
+"apiEndpoint = ""https://dev-api.fintelite.ai/v1/ocr/recognition""",,,,2023-11-07 21:28:17,2023-11-07 21:28:17,0.006s,PASSED
+"documentType = ""INVOICE""",,,,2023-11-07 21:28:17,2023-11-07 21:28:17,0.000s,PASSED
+"filePath = ""/Users/vieriazzurri/Downloads/ted/AuntieAnnes.jpg""",,,,2023-11-07 21:28:17,2023-11-07 21:28:17,0.001s,PASSED
+httpClient = HttpClients.createDefault(),,,,2023-11-07 21:28:17,2023-11-07 21:28:18,0.789s,PASSED
+httpPost = new org.apache.http.client.methods.HttpPost(apiEndpoint),,,,2023-11-07 21:28:18,2023-11-07 21:28:18,0.037s,PASSED
+multipartEntity = MultipartEntityBuilder.create(),,,,2023-11-07 21:28:18,2023-11-07 21:28:18,0.010s,PASSED
+"multipartEntity.addTextBody(""document_type"", documentType)",,,,2023-11-07 21:28:18,2023-11-07 21:28:18,0.005s,PASSED
+"multipartEntity.addBinaryBody(""file"", new java.io.File(filePath), DEFAULT_BINARY, ""AuntieAnnes.jpg"")",,,,2023-11-07 21:28:18,2023-11-07 21:28:18,0.012s,PASSED
+httpPost.setEntity(multipartEntity.build()),,,,2023-11-07 21:28:18,2023-11-07 21:28:18,0.008s,PASSED
+response = httpClient.execute(httpPost),,,,2023-11-07 21:28:18,2023-11-07 21:28:21,2.574s,PASSED
+println(Response Status Code: $response.statusLine.statusCode),,,,2023-11-07 21:28:21,2023-11-07 21:28:21,0.109s,PASSED
+println(Response Data: $EntityUtils.toString(response.entity)),,,,2023-11-07 21:28:21,2023-11-07 21:28:21,0.023s,PASSED

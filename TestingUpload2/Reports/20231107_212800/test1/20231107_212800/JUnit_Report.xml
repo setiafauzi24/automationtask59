@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="test1" time="5.517" tests="1" failures="0" errors="0">
+   <testsuite name="test1" tests="1" failures="0" errors="0" time="5.517" skipped="0" timestamp="2023-11-07 21:28:15" hostname="vieriazzurri - localhost" id="Test Suites/test1">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/vieriazzurri/Katalon Studio/TestingUpload2/Reports/20231107_212800/test1/20231107_212800"/>
+         <property name="logFiles" value="/Users/vieriazzurri/Katalon Studio/TestingUpload2/Reports/20231107_212800/test1/20231107_212800/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="vieriazzurri - localhost"/>
+         <property name="hostAddress" value="127.0.0.1"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="8.6.8.208"/>
+      </properties>
+      <testcase name="Test Cases/testkesekiankali" time="5.088" classname="Test Cases/testkesekiankali" status="PASSED">
+         <system-out><![CDATA[2023-11-07 21:28:16 - [TEST_CASE][PASSED] - Test Cases/testkesekiankali: Test Cases/testkesekiankali
+
+2023-11-07 21:28:17 - [TEST_STEP][PASSED] - apiEndpoint = "https://dev-api.fintelite.ai/v1/ocr/recognition": null
+
+2023-11-07 21:28:17 - [TEST_STEP][PASSED] - documentType = "INVOICE": null
+
+2023-11-07 21:28:17 - [TEST_STEP][PASSED] - filePath = "/Users/vieriazzurri/Downloads/ted/AuntieAnnes.jpg": null
+
+2023-11-07 21:28:17 - [TEST_STEP][PASSED] - httpClient = HttpClients.createDefault(): null
+
+2023-11-07 21:28:18 - [TEST_STEP][PASSED] - httpPost = new org.apache.http.client.methods.HttpPost(apiEndpoint): null
+
+2023-11-07 21:28:18 - [TEST_STEP][PASSED] - multipartEntity = MultipartEntityBuilder.create(): null
+
+2023-11-07 21:28:18 - [TEST_STEP][PASSED] - multipartEntity.addTextBody("document_type", documentType): null
+
+2023-11-07 21:28:18 - [TEST_STEP][PASSED] - multipartEntity.addBinaryBody("file", new java.io.File(filePath), DEFAULT_BINARY, "AuntieAnnes.jpg"): null
+
+2023-11-07 21:28:18 - [TEST_STEP][PASSED] - httpPost.setEntity(multipartEntity.build()): null
+
+2023-11-07 21:28:18 - [TEST_STEP][PASSED] - response = httpClient.execute(httpPost): null
+
+2023-11-07 21:28:21 - [TEST_STEP][PASSED] - println(Response Status Code: $response.statusLine.statusCode): null
+
+2023-11-07 21:28:21 - [TEST_STEP][PASSED] - println(Response Data: $EntityUtils.toString(response.entity)): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2023-11-07 21:28:15 - [TEST_SUITE][PASSED] - test1: Test Cases/testkesekiankali]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
